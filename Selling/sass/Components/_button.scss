@@ -1,0 +1,31 @@
+.btnhead{
+    color: $color-green-2;
+    display: inline-block;
+    height: 32px;
+    @include styleText($fs-1,$fw-bold-0,$color-green-2);
+    @include styleButton($color-white-0,$color-green-2,$pd-0,$pd-1);
+    &:hover{
+        @include styleHoverButton($color-green-2,$color-green-2,$color-gray-5);
+    }
+}
+.btn-outline-success{
+    color: $color-white-0;
+    @include styleButton($color-green-1,$color-green-1,$pd-0,$pd-0);
+}
+.btnslogan{
+    border-radius: $border-radius;
+}
+.btnfooterlg{
+    @include styleButton($color-gray-2,$color-gray-2,$pd-2,$pd-2);
+    border-radius: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    &:hover{
+        @include styleButton($color-white-0,$color-gray-2,$pd-1,$pd-2);
+        color: $color-black-light;
+        border-radius: 20px;
+    }
+}
+.btnfooterUSD{
+    @extend .btnfooterlg;
+}

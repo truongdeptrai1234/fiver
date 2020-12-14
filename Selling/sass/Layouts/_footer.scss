@@ -1,0 +1,19 @@
+.footer_content .right{
+    
+   .fab{
+       margin-top: 5px;
+       color: $color-black-light;
+       border-radius: 50%;
+       &:hover{
+           transition: all 0.5s;
+           background-color: $color-gray-2;
+       }
+   }
+   .fa-male{
+       @extend .fab;
+   }
+
+}
+.footer_content .left{
+    color: $color-black-light;
+}
