@@ -1,0 +1,37 @@
+@mixin styleText($fs,$fw,$color){
+    font-size: $fs;
+    font-weight: $fw;
+    color: $color;
+}
+@mixin styleHoverText($color) {
+    color: $color;
+}
+@mixin styleIcon($fs,$bd,$py,$px){
+    font-size: $fs;
+    border: 1px solid $bd;
+    padding: $py $px;
+}
+@mixin styleButton($bg-color,$border,$py,$px){
+    background-color: $bg-color;
+    border: 1px solid $border;
+    padding: $py $px;
+    border-radius: $border-radius;
+}
+@mixin styleHoverButton($bg-hover,$border-hover,$color-hover){
+    background-color:$bg-hover ;
+    border-color: $border-hover;
+    color: $color-hover;
+}
+//$scree : ten man hinh 
+@mixin responsive($screen){
+    @if(map-has-key($map:$breakpoints, $key:$screen)){
+        //Neu tim thay man hinh
+        $value:map-get($map:$breakpoints, $key:$screen );
+        @media screen and (max-width:$value){
+            @content;
+        } 
+    }@else{
+        @warn "Man hinh khong phu hop";
+    }
+
+}
