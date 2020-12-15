@@ -15,3 +15,17 @@
 .btnslogan{
     border-radius: $border-radius;
 }
+.btnfooterlg{
+    @include styleButton($color-gray-2,$color-gray-2,$pd-2,$pd-2);
+    border-radius: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    &:hover{
+        @include styleButton($color-white-0,$color-gray-2,$pd-1,$pd-2);
+        color: $color-black-light;
+        border-radius: 20px;
+    }
+}
+.btnfooterUSD{
+    @extend .btnfooterlg;
+}
