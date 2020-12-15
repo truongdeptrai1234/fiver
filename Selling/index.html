@@ -532,21 +532,19 @@
 
     </div>
   </section>
-
   <section class="getstart">
     <p>Sign up and create your first Gig today</p>
     <button>Get Started</button>
   </section>
-
   <footer>
-    <div class="footer_content container pt-3 mt-5" style="border-top: 1px solid gray;">
-        <div class="footer_bottom row py-3 d-flex justify-content-between align-item-center">
-            <div class="left row text-secondary">
-                <h5 class="pr-2 pl-4"><img src="./img/logofooter.svg" alt=""></h5>
-                <p class="pt-2 pl-1" style="color: gray;">© Fiverr International Ltd. 2020</p>
+    <div class="footer__content">
+        <div class="footer__bottom row py-3">
+            <div class="left row">
+                <h5>Fiverr</h5>
+                <p>© Fiverr International Ltd. 2020</p>
             </div>
             <div class="right row">
-                <ul class="d-flex align-item-center" style="list-style: none;">
+                <ul>
                     <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                     <li><a href="#"><i class="fab fa-facebook"></i></a></li>
                     <li><a href="#"><i class="fab fa-invision"></i></a></li>
@@ -554,13 +552,13 @@
                     <li class="pr-4"><a href="#"><i class="fab fa-instagram"></i></a></li>
                     <li class="btn-english">
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-secondary p-2 btnfooterlg" data-toggle="modal" data-target="#exampleModal1">
-                            <i class="fas fa-globe pl-1"></i> <span class=" pr-2 p-2 ">English</span>
+                        <button type="button" class="btn pt-0" data-toggle="modal" data-target="#exampleModal">
+                            <i class="fas fa-globe"></i> <span class="pl-2">English</span>
                         </button>
 
                         <!-- Modal -->
-                        <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog"
-                            aria-labelledby="exampleModalLabel1" aria-hidden="true">
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
@@ -591,17 +589,17 @@
                     </li>
                     <li>
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-secondary p-2 btnfooterUSD" data-toggle="modal" data-target="#exampleModal2">
-                            <span class="pl-1 p-2">$USD</span>
+                        <button type="button" class="btn pt-0" data-toggle="modal" data-target="#exampleModal1">
+                            <span class="pl-1">$USD</span>
                         </button>
 
                         <!-- Modal -->
-                        <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog"
+                        <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog"
                             aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel2"> Choose a currency</h5>
+                                        <h5 class="modal-title" id="exampleModalLabel"> Choose a currency</h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
@@ -630,14 +628,16 @@
                         </div>
                         <!-- <a href="#">$USD</a> -->
                     </li>
-
-                    <li><a href="#"><i class="fas fa-male male__border text-secondary px-3 text-center"></i></a></li>
+                    <li><a href="#"><i class="fas fa-male male__border"></i></a></li>
 
                 </ul>
 
             </div>
         </div>
-  </footer>
+</footer>
+
+  
+
 
 
 
